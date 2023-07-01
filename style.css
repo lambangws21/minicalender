@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1d0000, #20205b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calender {
+  width: 310px;
+  height: 250px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.left,
+.right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.right {
+  width: 42%;
+  background: #7f0faf;
+  color: #fff;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.left {
+  width: 58%;
+  background-image: url(/img/raz.jpg);
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+  background: linear-gradient(45deg, #b2c4c9);
+
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.left:hover{
+    background-size: cover;
+    transform: scale();
+}
+#date:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+#day:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+#year:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+#date {
+  font-size: 100px;
+  line-height: 90px;
+  font-weight: 600;
+}
+#day {
+  font-weight: 700;
+}
+
+#year {
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 700;
+}
